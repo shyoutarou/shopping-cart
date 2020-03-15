@@ -1,0 +1,32 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Design Patterns com C#",
+            "image": "livro_designpatterns.jpg",
+            "price": 49.00,
+            "description": "Livro que trata das estruturas de padrões de programação C#"
+        },
+        {
+            "id": 2,
+            "name": "Pandas Python",
+            "image": "livro_pandaspython.jpg",
+            "price": 25.00,
+            "description": "Conhecendo por dentro o Pandas Python"
+        },
+        {
+            "id": 3,
+            "name": "Jogos 2D com Stencyl",
+            "image": "livro_stencyl.jpg",
+            "price": 38.00,
+            "description": "Técnicas de desenvolvimento de jogos com Stencyl"
+        },
+        {
+            "id": 4,
+            "name": "Xamarin Forms e MVVM",
+            "image": "livro_stencyl.jpg",
+            "price": 10.00,
+            "description": "Ampliando os horizontes dentro do Xamarin"
+        }
+    ]
+}
