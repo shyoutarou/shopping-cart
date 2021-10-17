@@ -10,7 +10,7 @@ import { Cart } from "./views/Cart";
 function App() {
   return (
     <Provider store={Store}>
-      <div id="main-app">
+      <div id="main-app">       
         <h1>Amazing Store</h1>
         <BrowserRouter>
           <Route exact path="/" component={ProductsList} />
