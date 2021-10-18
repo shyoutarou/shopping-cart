@@ -6,13 +6,14 @@ import { ProductsList } from "./views/Products";
 import { Product } from "./views/Product";
 import { Store } from "./store";
 import { Cart } from "./views/Cart";
+import { PageHeader } from "./components/PageHeader";
 
 function App() {
   return (
     <Provider store={Store}>
       <div id="main-app">       
-        <h1>Amazing Store</h1>
         <BrowserRouter>
+          <PageHeader backroute={ "rotavoltar" } />
           <Route exact path="/" component={ProductsList} />
           <Route path="/product/:id" component={Product} />
           <Route path="/cart" component={Cart} />
