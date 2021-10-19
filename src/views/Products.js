@@ -8,7 +8,7 @@ export class ProductsList extends Component {
     products: []
   };
 
-  async componentWillMount() {
+  async UNSAFE_componentWillMount () {
     const { items } = await Products.getProducts();
     this.setState({ products: items });
   }
@@ -16,10 +16,11 @@ export class ProductsList extends Component {
   render() {
     return (
       <ul className="product-list">
-        {this.state.products.map(p => (
-          <ProductItem product={p} />
+        {this.state.products.map((p, index) => (
+          <ProductItem key={index} product={p}  />
         ))}
       </ul>
     );
   }
 }
+

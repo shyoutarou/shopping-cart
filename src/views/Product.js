@@ -9,7 +9,7 @@ class ProductComponent extends Component {
     product: {}
   };
 
-  async componentWillMount() {
+  async UNSAFE_componentWillMount () {
     const product = await Products.getProductById(this.props.match.params.id);
 
     this.setState({ product });
@@ -33,6 +33,7 @@ class ProductComponent extends Component {
         <p>{this.state.product.description}</p>
         <button onClick={() => this.props.addToCart(this.state.product)}>Add to cart</button>
         <p><Link to="/cart">View cart</Link></p>
+        <p><Link to={`/`}>Voltar</Link></p>
       </div>
     );
   }
