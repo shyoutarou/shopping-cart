@@ -1,19 +1,20 @@
 #main-app,
 .product-page {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .product-list li {
-    display: inline-block;
-    margin-bottom: 100px;
+  display: inline-block;
+  margin-bottom: 100px;
 }
 
 .product-item {
-    width: 33%;
+  width: 33%;
 }
 
 .product-item img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }

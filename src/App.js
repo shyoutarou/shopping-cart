@@ -11,12 +11,14 @@ import { PageHeader } from "./components/PageHeader";
 function App() {
   return (
     <Provider store={Store}>
-      <div id="main-app">       
+      <div id="main">       
         <BrowserRouter>
-          <PageHeader backroute={ "rotavoltar" } />
-          <Route exact path="/" component={ProductsList} />
-          <Route path="/product/:id" component={Product} />
-          <Route path="/cart" component={Cart} />
+          <PageHeader id="main-pageheader" title={ "Amazing Store" } />
+          <div id="main-app">    
+            <Route exact path="/" component={ProductsList} />
+            <Route path="/product/:id" component={Product} />
+            <Route path="/cart" component={Cart} />
+          </div>
         </BrowserRouter>
       </div>
     </Provider>
