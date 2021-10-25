@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/templariosp/shopping-cart/master/public/demo.gif" alt="Image" width="100%" />
+</p>
+
 ## Available Scripts
 
 In the project directory, you can run:
